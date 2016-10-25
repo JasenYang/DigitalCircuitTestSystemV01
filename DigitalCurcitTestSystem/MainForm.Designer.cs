@@ -69,9 +69,9 @@
             this.GPIBNum = new System.Windows.Forms.NumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -85,8 +85,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Port0)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GPIBNum)).BeginInit();
-            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -94,18 +94,18 @@
             this.panel1.Controls.Add(this.lstResourceManage);
             this.panel1.Controls.Add(this.button被测件管理);
             this.panel1.Controls.Add(this.button测试仪器管理);
-            this.panel1.Location = new System.Drawing.Point(13, 13);
+            this.panel1.Location = new System.Drawing.Point(13, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(169, 649);
+            this.panel1.Size = new System.Drawing.Size(169, 599);
             this.panel1.TabIndex = 0;
             // 
             // lstResourceManage
             // 
             this.lstResourceManage.LargeImageList = this.imageList1;
-            this.lstResourceManage.Location = new System.Drawing.Point(2, 41);
+            this.lstResourceManage.Location = new System.Drawing.Point(2, 38);
             this.lstResourceManage.MultiSelect = false;
             this.lstResourceManage.Name = "lstResourceManage";
-            this.lstResourceManage.Size = new System.Drawing.Size(163, 569);
+            this.lstResourceManage.Size = new System.Drawing.Size(163, 526);
             this.lstResourceManage.TabIndex = 18;
             this.lstResourceManage.UseCompatibleStateImageBehavior = false;
             this.lstResourceManage.Click += new System.EventHandler(this.lstResourceManage_Click);
@@ -124,13 +124,13 @@
             // 
             // button被测件管理
             // 
-            this.button被测件管理.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.button被测件管理.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button被测件管理.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(142)))), ((int)(((byte)(206)))));
             this.button被测件管理.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button被测件管理.Location = new System.Drawing.Point(0, 616);
+            this.button被测件管理.Location = new System.Drawing.Point(0, 569);
             this.button被测件管理.Name = "button被测件管理";
-            this.button被测件管理.Size = new System.Drawing.Size(164, 33);
+            this.button被测件管理.Size = new System.Drawing.Size(164, 30);
             this.button被测件管理.TabIndex = 17;
             this.button被测件管理.Text = "被测件管理";
             this.button被测件管理.UseVisualStyleBackColor = false;
@@ -144,7 +144,7 @@
             this.button测试仪器管理.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button测试仪器管理.Location = new System.Drawing.Point(1, 2);
             this.button测试仪器管理.Name = "button测试仪器管理";
-            this.button测试仪器管理.Size = new System.Drawing.Size(166, 36);
+            this.button测试仪器管理.Size = new System.Drawing.Size(166, 33);
             this.button测试仪器管理.TabIndex = 16;
             this.button测试仪器管理.Text = "测试仪器管理";
             this.button测试仪器管理.UseVisualStyleBackColor = false;
@@ -159,9 +159,9 @@
             this.panel2.Controls.Add(this.groupBox0);
             this.panel2.Controls.Add(this.groupBox4);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(228, 13);
+            this.panel2.Location = new System.Drawing.Point(228, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1069, 649);
+            this.panel2.Size = new System.Drawing.Size(1069, 599);
             this.panel2.TabIndex = 1;
             // 
             // groupBox1
@@ -172,9 +172,9 @@
             this.groupBox1.Controls.Add(this.Port1);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.Location = new System.Drawing.Point(693, 37);
+            this.groupBox1.Location = new System.Drawing.Point(693, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(336, 260);
+            this.groupBox1.Size = new System.Drawing.Size(336, 240);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "示波器DSOS404A配置";
@@ -184,7 +184,7 @@
             // 
             this.ipAddressControl1.BackColor = System.Drawing.SystemColors.Window;
             this.ipAddressControl1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ipAddressControl1.Location = new System.Drawing.Point(133, 60);
+            this.ipAddressControl1.Location = new System.Drawing.Point(133, 55);
             this.ipAddressControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ipAddressControl1.MinimumSize = new System.Drawing.Size(192, 28);
             this.ipAddressControl1.Name = "ipAddressControl1";
@@ -194,9 +194,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(133, 166);
+            this.button1.Location = new System.Drawing.Point(133, 153);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 35);
+            this.button1.Size = new System.Drawing.Size(94, 32);
             this.button1.TabIndex = 17;
             this.button1.Text = "打开";
             this.button1.UseVisualStyleBackColor = true;
@@ -205,7 +205,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(40, 115);
+            this.label7.Location = new System.Drawing.Point(40, 106);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 19);
             this.label7.TabIndex = 8;
@@ -213,7 +213,7 @@
             // 
             // Port1
             // 
-            this.Port1.Location = new System.Drawing.Point(133, 114);
+            this.Port1.Location = new System.Drawing.Point(133, 105);
             this.Port1.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -231,7 +231,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(40, 63);
+            this.label8.Location = new System.Drawing.Point(40, 58);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 19);
             this.label8.TabIndex = 6;
@@ -242,9 +242,9 @@
             this.groupBox5.Controls.Add(this.btnFZTest);
             this.groupBox5.Controls.Add(this.btnYTTest);
             this.groupBox5.Font = new System.Drawing.Font("宋体", 13.8F);
-            this.groupBox5.Location = new System.Drawing.Point(367, 28);
+            this.groupBox5.Location = new System.Drawing.Point(367, 26);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(304, 246);
+            this.groupBox5.Size = new System.Drawing.Size(304, 227);
             this.groupBox5.TabIndex = 25;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "测试项";
@@ -252,9 +252,9 @@
             // 
             // btnFZTest
             // 
-            this.btnFZTest.Location = new System.Drawing.Point(62, 55);
+            this.btnFZTest.Location = new System.Drawing.Point(62, 51);
             this.btnFZTest.Name = "btnFZTest";
-            this.btnFZTest.Size = new System.Drawing.Size(194, 46);
+            this.btnFZTest.Size = new System.Drawing.Size(194, 42);
             this.btnFZTest.TabIndex = 20;
             this.btnFZTest.Text = "电源负载测试";
             this.btnFZTest.UseVisualStyleBackColor = true;
@@ -262,9 +262,9 @@
             // 
             // btnYTTest
             // 
-            this.btnYTTest.Location = new System.Drawing.Point(62, 126);
+            this.btnYTTest.Location = new System.Drawing.Point(62, 116);
             this.btnYTTest.Name = "btnYTTest";
-            this.btnYTTest.Size = new System.Drawing.Size(194, 46);
+            this.btnYTTest.Size = new System.Drawing.Size(194, 42);
             this.btnYTTest.TabIndex = 21;
             this.btnYTTest.Text = "信号眼图测试";
             this.btnYTTest.UseVisualStyleBackColor = true;
@@ -278,9 +278,9 @@
             this.groupBox3.Controls.Add(this.Port3);
             this.groupBox3.Controls.Add(this.label21);
             this.groupBox3.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox3.Location = new System.Drawing.Point(390, 304);
+            this.groupBox3.Location = new System.Drawing.Point(390, 281);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(336, 260);
+            this.groupBox3.Size = new System.Drawing.Size(336, 240);
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "N5751A配置";
@@ -288,9 +288,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(133, 161);
+            this.button3.Location = new System.Drawing.Point(133, 149);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 35);
+            this.button3.Size = new System.Drawing.Size(94, 32);
             this.button3.TabIndex = 19;
             this.button3.Text = "打开";
             this.button3.UseVisualStyleBackColor = true;
@@ -300,7 +300,7 @@
             // 
             this.ipAddressControl3.BackColor = System.Drawing.SystemColors.Window;
             this.ipAddressControl3.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ipAddressControl3.Location = new System.Drawing.Point(133, 63);
+            this.ipAddressControl3.Location = new System.Drawing.Point(133, 58);
             this.ipAddressControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ipAddressControl3.MinimumSize = new System.Drawing.Size(192, 28);
             this.ipAddressControl3.Name = "ipAddressControl3";
@@ -311,7 +311,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(40, 115);
+            this.label20.Location = new System.Drawing.Point(40, 106);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(76, 19);
             this.label20.TabIndex = 8;
@@ -319,7 +319,7 @@
             // 
             // Port3
             // 
-            this.Port3.Location = new System.Drawing.Point(133, 114);
+            this.Port3.Location = new System.Drawing.Point(133, 105);
             this.Port3.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -337,7 +337,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(40, 63);
+            this.label21.Location = new System.Drawing.Point(40, 58);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(77, 19);
             this.label21.TabIndex = 6;
@@ -351,9 +351,9 @@
             this.groupBox2.Controls.Add(this.Port2);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox2.Location = new System.Drawing.Point(16, 294);
+            this.groupBox2.Location = new System.Drawing.Point(16, 271);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(336, 260);
+            this.groupBox2.Size = new System.Drawing.Size(336, 240);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "信号发生器81160A配置";
@@ -361,9 +361,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(133, 157);
+            this.button2.Location = new System.Drawing.Point(133, 145);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 35);
+            this.button2.Size = new System.Drawing.Size(94, 32);
             this.button2.TabIndex = 18;
             this.button2.Text = "打开";
             this.button2.UseVisualStyleBackColor = true;
@@ -373,7 +373,7 @@
             // 
             this.ipAddressControl2.BackColor = System.Drawing.SystemColors.Window;
             this.ipAddressControl2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ipAddressControl2.Location = new System.Drawing.Point(133, 63);
+            this.ipAddressControl2.Location = new System.Drawing.Point(133, 58);
             this.ipAddressControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ipAddressControl2.MinimumSize = new System.Drawing.Size(192, 28);
             this.ipAddressControl2.Name = "ipAddressControl2";
@@ -384,7 +384,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(40, 115);
+            this.label16.Location = new System.Drawing.Point(40, 106);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(76, 19);
             this.label16.TabIndex = 8;
@@ -392,7 +392,7 @@
             // 
             // Port2
             // 
-            this.Port2.Location = new System.Drawing.Point(133, 114);
+            this.Port2.Location = new System.Drawing.Point(133, 105);
             this.Port2.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -410,7 +410,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(40, 63);
+            this.label17.Location = new System.Drawing.Point(40, 58);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(77, 19);
             this.label17.TabIndex = 6;
@@ -424,18 +424,18 @@
             this.groupBox0.Controls.Add(this.Port0);
             this.groupBox0.Controls.Add(this.label5);
             this.groupBox0.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox0.Location = new System.Drawing.Point(16, 14);
+            this.groupBox0.Location = new System.Drawing.Point(16, 13);
             this.groupBox0.Name = "groupBox0";
-            this.groupBox0.Size = new System.Drawing.Size(336, 260);
+            this.groupBox0.Size = new System.Drawing.Size(336, 240);
             this.groupBox0.TabIndex = 21;
             this.groupBox0.TabStop = false;
             this.groupBox0.Text = "电源N6705B配置";
             // 
             // button0
             // 
-            this.button0.Location = new System.Drawing.Point(133, 162);
+            this.button0.Location = new System.Drawing.Point(133, 150);
             this.button0.Name = "button0";
-            this.button0.Size = new System.Drawing.Size(94, 35);
+            this.button0.Size = new System.Drawing.Size(94, 32);
             this.button0.TabIndex = 16;
             this.button0.Text = "打开";
             this.button0.UseVisualStyleBackColor = true;
@@ -445,7 +445,7 @@
             // 
             this.ipAddressControl.BackColor = System.Drawing.SystemColors.Window;
             this.ipAddressControl.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ipAddressControl.Location = new System.Drawing.Point(133, 63);
+            this.ipAddressControl.Location = new System.Drawing.Point(133, 58);
             this.ipAddressControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ipAddressControl.MinimumSize = new System.Drawing.Size(192, 28);
             this.ipAddressControl.Name = "ipAddressControl";
@@ -456,7 +456,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 115);
+            this.label4.Location = new System.Drawing.Point(40, 106);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 19);
             this.label4.TabIndex = 8;
@@ -464,7 +464,7 @@
             // 
             // Port0
             // 
-            this.Port0.Location = new System.Drawing.Point(133, 114);
+            this.Port0.Location = new System.Drawing.Point(133, 105);
             this.Port0.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -482,7 +482,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(40, 63);
+            this.label5.Location = new System.Drawing.Point(40, 58);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 19);
             this.label5.TabIndex = 6;
@@ -496,9 +496,9 @@
             this.groupBox4.Controls.Add(this.label22);
             this.groupBox4.Controls.Add(this.label23);
             this.groupBox4.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox4.Location = new System.Drawing.Point(732, 317);
+            this.groupBox4.Location = new System.Drawing.Point(732, 293);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(321, 237);
+            this.groupBox4.Size = new System.Drawing.Size(321, 219);
             this.groupBox4.TabIndex = 19;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "N3300A配置";
@@ -506,9 +506,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(120, 134);
+            this.button4.Location = new System.Drawing.Point(120, 124);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 35);
+            this.button4.Size = new System.Drawing.Size(94, 32);
             this.button4.TabIndex = 14;
             this.button4.Text = "打开";
             this.button4.UseVisualStyleBackColor = true;
@@ -517,7 +517,7 @@
             // label158
             // 
             this.label158.AutoSize = true;
-            this.label158.Location = new System.Drawing.Point(17, 77);
+            this.label158.Location = new System.Drawing.Point(17, 71);
             this.label158.Name = "label158";
             this.label158.Size = new System.Drawing.Size(97, 19);
             this.label158.TabIndex = 13;
@@ -525,7 +525,7 @@
             // 
             // GPIBNum
             // 
-            this.GPIBNum.Location = new System.Drawing.Point(120, 73);
+            this.GPIBNum.Location = new System.Drawing.Point(120, 67);
             this.GPIBNum.Name = "GPIBNum";
             this.GPIBNum.Size = new System.Drawing.Size(172, 28);
             this.GPIBNum.TabIndex = 12;
@@ -538,7 +538,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(238, 164);
+            this.label22.Location = new System.Drawing.Point(238, 151);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(0, 19);
             this.label22.TabIndex = 11;
@@ -546,16 +546,26 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(55, 164);
+            this.label23.Location = new System.Drawing.Point(55, 151);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(0, 19);
             this.label23.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DigitalCurcitTestSystem.Properties.Resources.电源;
+            this.pictureBox1.Location = new System.Drawing.Point(420, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(604, 296);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 665);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 612);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1309, 22);
             this.statusStrip1.TabIndex = 2;
@@ -564,24 +574,14 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(151, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(152, 17);
             this.toolStripStatusLabel1.Text = "北京星网联达科技有限公司";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DigitalCurcitTestSystem.Properties.Resources.电源;
-            this.pictureBox1.Location = new System.Drawing.Point(420, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(604, 321);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 26;
-            this.pictureBox1.TabStop = false;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1309, 687);
+            this.ClientSize = new System.Drawing.Size(1309, 634);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -609,9 +609,9 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GPIBNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
