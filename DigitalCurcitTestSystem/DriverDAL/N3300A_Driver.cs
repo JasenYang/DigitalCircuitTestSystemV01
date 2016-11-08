@@ -119,9 +119,7 @@ namespace DigitalCircuitSystem.DriverDAL
             if (error < 0)
             {
                 return error;
-            }
-            
-
+            }           
             commands = "FUNC RES";
             error = visa32.viWrite(nN3300AHandle, System.Text.Encoding.Default.GetBytes(commands), commands.Length, out retCnt);
             if (error < 0)
