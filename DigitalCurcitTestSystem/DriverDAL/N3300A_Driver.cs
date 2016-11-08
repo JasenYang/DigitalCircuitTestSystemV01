@@ -114,8 +114,15 @@ namespace DigitalCircuitSystem.DriverDAL
         {
             int error = 0;
             int retCnt;
+            string commands = "CNAN 1;:INPUT OFF";
+            error = visa32.viWrite(nN3300AHandle, System.Text.Encoding.Default.GetBytes(commands), commands.Length, out retCnt);
+            if (error < 0)
+            {
+                return error;
+            }
+            
 
-            string commands = "FUNC RES";
+            commands = "FUNC RES";
             error = visa32.viWrite(nN3300AHandle, System.Text.Encoding.Default.GetBytes(commands), commands.Length, out retCnt);
             if (error < 0)
             {
@@ -181,7 +188,7 @@ namespace DigitalCircuitSystem.DriverDAL
             // string strVal;
 
             //设置
-            string commands = "RES:RANG MAX";
+            string commands = "RES:RANG 150";
             error = visa32.viWrite(nN3300AHandle, System.Text.Encoding.Default.GetBytes(commands), commands.Length, out retCnt);
             if (error < 0)
             {
@@ -228,7 +235,7 @@ namespace DigitalCircuitSystem.DriverDAL
 
          //读取电压直
 
-        public static int GetVoltageValue(ref double retuenValue, ref double reEleValue)
+        public static int  GetVoltageValue(ref double retuenValue, ref double reEleValue)
          {
              int error = 0;
              int retCnt = 0;
